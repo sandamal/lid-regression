@@ -1,0 +1,23 @@
+python3 poison.py -m ridge -init randflipnobd -obj 0 -a 0.05 -b 0.75 -n 1e-5 -i 1 -s 4 -seed 2002 -opty -r 840 -t 280 -v 280 -p 210 -l 0.027268 -d ../datasets/house-processed.csv
+dataset: ../datasets/house-processed.csv
+trainct: 840
+testct: 280
+validct: 280
+poisct: 210
+partct: 4
+logdir: ../results
+logind: 0
+model: ridge
+lambd: 0.027268
+epsilon: 1e-05
+eta: 0.05
+beta: 0.75
+sigma: 1.0
+objective: 0
+optimizey: True
+initialization: randflipnobd
+numinit: 1
+rounding: False
+seed: 2002
+multiproc: False
+visualize: False
